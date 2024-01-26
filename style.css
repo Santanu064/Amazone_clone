@@ -199,13 +199,15 @@ margin: 4px;
     justify-content: space-evenly;
     background: #e2e7e6;
     flex-wrap: wrap;
+    padding: 15px 0px;
     
 }
 .box{
     height: 400px;
     width: 23%;
     background: white;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 20px 0px 15px;
 }
 .box-img{
@@ -221,4 +223,68 @@ margin: 4px;
 }
 .box-content p{
     color: #007185;
+}
+
+/*Footer*/
+
+.footer{
+    height: 760px;
+    background-color: #232F3E;
+}
+.toUp{
+    height: 50px;
+    background-color: #37475a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+}
+.toUp p{
+    color: #fff;
+    font-size: 13px;
+}
+.footerlist{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 87px;
+    margin-right: 87px;
+}
+.alllist{
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 100%;
+}
+.list{
+    list-style: none;
+    padding-left: 0px;
+
+}
+.list li a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+    font-family: inherit;
+    
+}
+.header{
+    color: #fff;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    
+
+}
+.listBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list li{
+    margin-top: 10px;
+}
+.horizontalLine{
+    border-top: 1px solid #3a4553;
+    margin-top: 40px;
 }
