@@ -288,3 +288,107 @@ margin: 4px;
     border-top: 1px solid #3a4553;
     margin-top: 40px;
 }
+.sectiona{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    height: 68px;
+    width: 100%;
+  
+}
+.footerlogo{
+    background-image: url("./amazon_logo.png");
+    background-size: cover;
+    height: 47px;
+    width: 90px;
+}
+.lagnselect{
+    height: 34px;
+    width: 116px;
+    background-color: transparent;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 6px 18px 6px 8px;
+
+    color: #ccc;
+}
+.sectionb{
+    margin-top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    width: 100%;
+    
+}
+.fotlist{
+    list-style:none ;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    color: #ccc ;
+    font-size: 13px;
+    
+
+
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0px;
+    width: 987px;
+  }
+
+  .country {
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+
+  .lastsection{
+    margin-top: 20px;
+background-color: #131A22;
+height: 157px;
+width: 100%;
+  }
+  .tabledata{
+    color:#999;
+    font-size: 12px!important;
+    padding: 8px 70px;
+  }
+  .span{
+    color:#ddd;
+  }
+  .table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .ftable{
+    margin: 17px;
+ }
+.sectionthrd{
+    height: 76px;
+    background-color:#131A22;
+    display: flex;
+    flex-direction: column;
+}
+.texto{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 21px 6px -18px 7px;
+}
+.footertext{
+    color:#ccc;
+    margin-left: 10px;
+    font-size: 12px;
+}
