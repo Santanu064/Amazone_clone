@@ -19,7 +19,7 @@
     width: 100px;
 }
 .logo{
-    background-image: url("./amazon_logo.png");
+    background-image: url("./Images/amazon_logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;
@@ -99,7 +99,7 @@
     
 }
 .india-logo{
-    background-image: url("./1080px-Flag_of_India.png");
+    background-image: url("./Images/1080px-Flag_of_India.png");
     background-size: cover;
     width: 23px;
     height: 16px;
@@ -172,7 +172,7 @@ margin: 4px;
 /* hero section*/
 
 .hero-section{
-    background-image: url("./hero_image.jpg");
+    background-image: url("./Images/hero_image.jpg");
     background-size: cover;
     height: 350px;
     display: flex;
@@ -299,7 +299,7 @@ margin: 4px;
   
 }
 .footerlogo{
-    background-image: url("./amazon_logo.png");
+    background-image: url("./Images/amazon_logo.png");
     background-size: cover;
     height: 47px;
     width: 90px;
