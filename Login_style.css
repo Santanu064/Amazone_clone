@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+
+}
+.login{
+    padding: 14px 18px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 19px;
+    align-items: center;
+}
+.navbar{
+    background-color: transparent !important;
+    padding: 0px;
+}
+.navbar .container{
+    justify-content: center;
+}
+.box1{
+    height: 360px;
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 26px !important;
+    justify-content: center;
+    margin-top: 22px;
+}
+.sign-in{
+    font-weight: 400;
+    font-size: 28px;
+}
+.form-label{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+.btn-primary{
+    background-color: #FFD814;
+    border-color: #FCD200;
+    color: #0F1111;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    width: 294px;
+    height: 29px;
+}
+.btn:hover{
+    background-color: red;
+}
+.text-1{
+    margin-top: 18px;
+    font-size: 12px;
+}
+span{
+    color:#0066c0
+}
+.help-sec{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Help{
+font-size: 13px;
+cursor: pointer;
+color: #0066c0;
+
+}
+.Help:hover{
+    cursor: pointer;
+    color: #c45500;
+
+}
+.hr-line{
+    margin-top: 22px;
+    margin-bottom: 14px;
+    height: 1px;
+    background-color: #ddd;
+}
+.text-2{
+    font-size: 13px;
+    font-weight: 700;
+}
+.text-3{
+    margin-top: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #0066c0;
+}
+.text-3:hover{
+    cursor: pointer;
+    color: #c45500;
+
+}
