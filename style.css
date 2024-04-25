@@ -18,7 +18,7 @@ p{
 /** logo desine*/
 
 .nav-logo{
-    height: 50px;
+    height: 46px;
     width: 100px;
 }
 .logo{
@@ -176,7 +176,7 @@ margin: 4px;
 .d-block{
     background-size: cover;
 }
-  img {
+  .h-img {
       -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1)40%, rgba(0,0,0,0) 100%);
       z-index: 1;
@@ -214,7 +214,7 @@ height: fit-content;
     width: 23%;
     background: white;
     margin-top: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     padding: 15px 0px 15px;
     z-index: 1;
 }
@@ -270,7 +270,126 @@ height: fit-content;
     margin-top: 1.5px;
     color: #484040;
 }
+.card-carouler{
+    width: 1377px;
+    height: 366.89px;
+    background-color: #fff;
+  }
+  .slide_section{
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 10px 20px;
+  overflow-x: hidden;
+  position: relative;
+  }
+  .slide_title > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: buttom 5px;
+    margin-bottom: 20px
+  }
+  .slide_title > h2 > span{
+    font-size: 14px;
+    color: #007185;
+    margin-left: 10px;
+    font-weight: 500;
 
+  }
+  .card_silder{
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  }
+  .card_silder::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    cursor: pointer;
+  }
+  .card_silder::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  cursor: pointer;
+  }
+  .r_btn{
+    z-index: 1;
+    position: sticky;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+  .l_btn{
+    z-index: 1;
+    position: sticky;
+    left: 0;
+    margin-right: -55px;
+    display: flex;
+    align-items: center;
+  }
+  .bi.bi-chevron-left{
+    width: 45px;
+    height: 100px;
+    border-radius: 0 3px 3px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px #888;
+  }
+  .bi.bi-chevron-right{
+  width: 45px;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px #888;
+  border-radius: 3px 0 0 3px;
+  }
+  .card{
+    height: 283.89px;
+    width: 240px;
+    min-width: 240px;
+    border: none;
+  }
+.carou_pic{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(15, 17, 17, .03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_imag{
+    margin: auto;
+    max-height: 184px;
+    max-width: 224px;
+    mix-blend-mode: multiply;
+}
+.offers{
+    display: flex;
+    gap: 6px;
+}
+.off_prtg{
+    height: 24px;
+    width: 55.94px;
+    background-color:#CC0C39;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+.off_msg{
+    font-size: 12px;
+    font-weight: 700;
+    color: #CC0C39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro_name{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #0F1111;
+}
 /*Footer*/
 
 .footer{

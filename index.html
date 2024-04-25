@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -43,7 +43,7 @@
         </select>
       </div>
 
-      <div class="Account border" onclick="loginPage()">
+      <div class="Account border"">
         <p><span>Hello,sing in</span></p>
         <p class="nav-list">Account & Lists</p>
       </div>
@@ -78,22 +78,35 @@
     </div>
   </header>
   <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./Images/Hero_image/hero-1.jpg" class="d-block w-100" alt="...">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Images/Hero_image/hero-1.jpg" class="d-block w-100 h-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/Hero_image/hero-2.jpg" class="d-block w-100 h-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/Hero_image/hero-3.jpg" class="d-block w-100 h-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/Hero_image/hero-4.jpg" class="d-block w-100 h-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/Hero_image/hero-5.jpg" class="d-block w-100 h-img" alt="...">
+        </div>
+
       </div>
-      <div class="carousel-item">
-        <img src="./Images/Hero_image/hero-2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/Hero_image/hero-3.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/Hero_image/hero-4.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./Images/Hero_image/hero-5.jpg" class="d-block w-100" alt="...">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -105,265 +118,459 @@
     </button>
   </div>
   <div class="bg">
-  <div class="shop">
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Revamp your home in style</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin-fm">
-          <div class="boxin-content">
-            <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_f.jpg');"></div>
-            <div class="boxin-text">Cushion covers, bedsheets & more</div>
+    <div class="shop">
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Revamp your home in style</h2>
+          <div class="boxin-wrapper">
+            <div class="boxin-fm">
+              <div class="boxin-content">
+                <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_f.jpg');"></div>
+                <div class="boxin-text">Cushion covers, bedsheets & more</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_s.jpg')"></div>
+                <div class="boxin-text">Figurines, vases and more</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_t.jpg');"></div>
+                <div class="boxin-text">Home storage</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_th.jpg') ;"></div>
+                <div class="boxin-text">Lighting solutaion</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_s.jpg')"></div>
-            <div class="boxin-text">Figurines, vases and more</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_t.jpg');"></div>
-            <div class="boxin-text">Home storage</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_th.jpg') ;"></div>
-            <div class="boxin-text">Lighting solutaion</div>
-          </div>
-        </div>
-      </div>
-        <p style="margin-top: 15px;">Explore more</p>
-      </div>
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Appliances for your home | Up to 55% off</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-f.jpg')"></div>
-            <div class="boxin-text">Air conditioners</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-s.jpg')"></div>
-            <div class="boxin-text">Refrigerators</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-t.jpg')"></div>
-            <div class="boxin-text">Microwaves</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-th.jpg')"></div>
-            <div class="boxin-text">Washing machines</div>
-          </div>
+          <p style="margin-top: 15px;">Explore more</p>
         </div>
       </div>
-        <p>Explore more</p>
-      </div>
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Starting ₹149 | Bestseling earbuds, headphones</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-f.jpg')"></div>
-            <div class="boxin-text">Starting ₹249 | boAt</div>
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Appliances for your home | Up to 55% off
+          </h2>
+          <div class="boxin-wrapper">
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-f.jpg')"></div>
+                <div class="boxin-text">Air conditioners</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-s.jpg')"></div>
+                <div class="boxin-text">Refrigerators</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-t.jpg')"></div>
+                <div class="boxin-text">Microwaves</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-th.jpg')"></div>
+                <div class="boxin-text">Washing machines</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-s.jpg')"></div>
-            <div class="boxin-text">Starting ₹349 | boult</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-t.jpg')"></div>
-            <div class="boxin-text">Starting ₹649 | Noise</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-th.jpg')"></div>
-            <div class="boxin-text">Starting ₹149 | Zebronics</div>
-          </div>
-        </div>
-      </div>
-        <p>Explore more</p>
-      </div>
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Up to 60% off | Styles for men</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-f.jpg')"></div>
-            <div class="boxin-text">Clothing</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-s.jpg')"></div>
-            <div class="boxin-text">Footwear</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-t.jpg')"></div>
-            <div class="boxin-text">Watches</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-th.jpg')"></div>
-            <div class="boxin-text">Bags & Wallets</div>
-          </div>
+          <p>Explore more</p>
         </div>
       </div>
-        <p>Explore more</p>
-      </div>
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Starting ₹99 | Amazon Brands & more</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_f.jpg')"></div>
-            <div class="boxin-text">Starting ₹189 | Waterbottles</div>
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Starting ₹149 | Bestseling earbuds,
+            headphones</h2>
+          <div class="boxin-wrapper">
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-f.jpg')"></div>
+                <div class="boxin-text">Starting ₹249 | boAt</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-s.jpg')"></div>
+                <div class="boxin-text">Starting ₹349 | boult</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-t.jpg')"></div>
+                <div class="boxin-text">Starting ₹649 | Noise</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-th.jpg')"></div>
+                <div class="boxin-text">Starting ₹149 | Zebronics</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_s.jpg')"></div>
-            <div class="boxin-text">Up to 60% off | Storage & racks</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_t.jpg')"></div>
-            <div class="boxin-text">Starting ₹99 | Toys & games</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5-th.jpg')"></div>
-            <div class="boxin-text">Up to 60% off | Jackets, dresses & more</div>
-          </div>
-        </div>
-      </div>
-        <p>Explore more</p>
-      </div>
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Starting ₹99 | All your home improvement needs</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_f.jpg')"></div>
-            <div class="boxin-text">Spin mops, wipes & more</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_s.jpg')"></div>
-            <div class="boxin-text">Bathroom hardware & accessories</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_t.jpg')"></div>
-            <div class="boxin-text">Hammers, screwdrivers & more</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_th.jpg')"></div>
-            <div class="boxin-text">Extension boards, plugs & more</div>
-          </div>
+          <p>Explore more</p>
         </div>
       </div>
-        <p>Explore more</p>
-      </div>
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Up to 60% off | Styles for women</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_f.jpg')"></div>
-            <div class="boxin-text">Women's Clothing</div>
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Up to 60% off | Styles for men</h2>
+          <div class="boxin-wrapper">
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-f.jpg')"></div>
+                <div class="boxin-text">Clothing</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-s.jpg')"></div>
+                <div class="boxin-text">Footwear</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-t.jpg')"></div>
+                <div class="boxin-text">Watches</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-th.jpg')"></div>
+                <div class="boxin-text">Bags & Wallets</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_s.jpg')"></div>
-            <div class="boxin-text">Footwear+Handbags</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_t.jpg')"></div>
-            <div class="boxin-text">Watches</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_th.jpg')"></div>
-            <div class="boxin-text">Fashion jewellery</div>
-          </div>
-        </div>
-      </div>
-        <p>Explore more</p>
-      </div>
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Automotive essentials | Up to 60% off</h2>
-        <div class="boxin-wrapper">
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_f.jpg')"></div>
-            <div class="boxin-text">Cleaning accessories</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_s.jpg')"></div>
-            <div class="boxin-text">Tyre & rim care</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_t.jpg')"></div>
-            <div class="boxin-text">Helmets</div>
-          </div>
-        </div>
-        <div class="boxin">
-          <div class="boxin-content">
-            <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_th.jpg')"></div>
-            <div class="boxin-text">Vacuum cleaner</div>
-          </div>
+          <p>Explore more</p>
         </div>
       </div>
-        <p>Explore more</p>
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Starting ₹99 | Amazon Brands & more</h2>
+          <div class="boxin-wrapper">
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_f.jpg')"></div>
+                <div class="boxin-text">Starting ₹189 | Waterbottles</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_s.jpg')"></div>
+                <div class="boxin-text">Up to 60% off | Storage & racks</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_t.jpg')"></div>
+                <div class="boxin-text">Starting ₹99 | Toys & games</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5-th.jpg')"></div>
+                <div class="boxin-text">Up to 60% off | Jackets, dresses & more</div>
+              </div>
+            </div>
+          </div>
+          <p>Explore more</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Starting ₹99 | All your home improvement
+            needs</h2>
+          <div class="boxin-wrapper">
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_f.jpg')"></div>
+                <div class="boxin-text">Spin mops, wipes & more</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_s.jpg')"></div>
+                <div class="boxin-text">Bathroom hardware & accessories</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_t.jpg')"></div>
+                <div class="boxin-text">Hammers, screwdrivers & more</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_th.jpg')"></div>
+                <div class="boxin-text">Extension boards, plugs & more</div>
+              </div>
+            </div>
+          </div>
+          <p>Explore more</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Up to 60% off | Styles for women</h2>
+          <div class="boxin-wrapper">
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_f.jpg')"></div>
+                <div class="boxin-text">Women's Clothing</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_s.jpg')"></div>
+                <div class="boxin-text">Footwear+Handbags</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_t.jpg')"></div>
+                <div class="boxin-text">Watches</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_th.jpg')"></div>
+                <div class="boxin-text">Fashion jewellery</div>
+              </div>
+            </div>
+          </div>
+          <p>Explore more</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Automotive essentials | Up to 60% off</h2>
+          <div class="boxin-wrapper">
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_f.jpg')"></div>
+                <div class="boxin-text">Cleaning accessories</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_s.jpg')"></div>
+                <div class="boxin-text">Tyre & rim care</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_t.jpg')"></div>
+                <div class="boxin-text">Helmets</div>
+              </div>
+            </div>
+            <div class="boxin">
+              <div class="boxin-content">
+                <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_th.jpg')"></div>
+                <div class="boxin-text">Vacuum cleaner</div>
+              </div>
+            </div>
+          </div>
+          <p>Explore more</p>
+        </div>
+      </div>
+      <div class="card-carouler">
+        <div class="slide_section">
+          <div class="slide_title"><h2>Today’s Deals<span>see all deals</span></h2></div>
+          <div class="card_silder">
+
+
+            <div class="l_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+              </svg>
+            </div>
+  
+            <div class="card">
+              <div class="carou_pic">
+                  <img src="./Images/card-carouler/4105IiC5tDL._AC_SY200_.jpg" alt="" class="c_imag">
+              </div>
+                <div class="offers">
+                   <div class="off_prtg">40% off</div>
+                   <div class="off_msg">Limited time deal</div>
+                </div>
+                <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41bLD50sZSL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/21Y8QZTRJBL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/31agL1j3cHL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/31e1ZcqiwTL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41TssgTTkwL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41yhwaUVEGL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41uGjvXbeBL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/31-TqE7SqjL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/618I++aMUNL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/71JE6RVeu3L._SY695__AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/31gAA759UCL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41MAOdvdWTL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41h5U0ROy6L._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41Q8ngaU8aL._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/31H7R65unvS._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div>
+            </div>
+            <div class="card" style="margin-right: -55px;">
+              <div class="carou_pic">
+                <img src="./Images/card-carouler/41h5U0ROy6L._AC_SY200_.jpg" alt="" class="c_imag">
+            </div>
+              <div class="offers">
+                 <div class="off_prtg">40% off</div>
+                 <div class="off_msg">Limited time deal</div>
+              </div>
+              <div class="pro_name">Safety and Security</div></div>
+
+            <div class="r_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <footer>
     <div class="footer">
       <div class="toUp">
@@ -494,62 +701,62 @@
       </div>
       <div class="lastsection">
         <div class="table">
-        <table class="ftable">
-          <tr class="tablerow">
-            <td class="tabledata">
-              <span class="span">AbeBooks<br></span>
-              Books, art<br>
-              & collectibles
-            </td>
-            <td class="tabledata">
-              <span class="span">Amazon Web Services<br></span>
-              Scalable Cloud<br>
-              Computing Services
-            </td>
-            <td class="tabledata">
-              <span class="span">Audible<br></span>
-              Download<br>
-              Audio Books
-            </td>
-            <td class="tabledata">
-              <span class="span">IMDb<br></span>
-              Movies, TV<br>
-              & Celebrities
-            </td>
-          </tr>
+          <table class="ftable">
+            <tr class="tablerow">
+              <td class="tabledata">
+                <span class="span">AbeBooks<br></span>
+                Books, art<br>
+                & collectibles
+              </td>
+              <td class="tabledata">
+                <span class="span">Amazon Web Services<br></span>
+                Scalable Cloud<br>
+                Computing Services
+              </td>
+              <td class="tabledata">
+                <span class="span">Audible<br></span>
+                Download<br>
+                Audio Books
+              </td>
+              <td class="tabledata">
+                <span class="span">IMDb<br></span>
+                Movies, TV<br>
+                & Celebrities
+              </td>
+            </tr>
 
 
-          <tr class="tablerow">
-            <td class="tabledata">
-              <span class="span">Shopbop<br></span>
-              Designer<br>
-              Fashion Brands
-            </td>
-            <td class="tabledata">
-              <span class="span">Amazon Business<br></span>
-              Everything For<br>
-              Your Business
-            </td>
-            <td class="tabledata">
-              <span class="span">Prime Now<br></span>
-              2-Hour Delivery<br>
-              on Everyday Items
-            </td>
-            <td class="tabledata">
-              <span class="span">Amazon Prime Music<br></span>
-              100 million songs, ad-free<br>
-              Over 15 million podcast episodes
-            </td>
+            <tr class="tablerow">
+              <td class="tabledata">
+                <span class="span">Shopbop<br></span>
+                Designer<br>
+                Fashion Brands
+              </td>
+              <td class="tabledata">
+                <span class="span">Amazon Business<br></span>
+                Everything For<br>
+                Your Business
+              </td>
+              <td class="tabledata">
+                <span class="span">Prime Now<br></span>
+                2-Hour Delivery<br>
+                on Everyday Items
+              </td>
+              <td class="tabledata">
+                <span class="span">Amazon Prime Music<br></span>
+                100 million songs, ad-free<br>
+                Over 15 million podcast episodes
+              </td>
 
-          </tr>
-        </table>
-      </div>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="sectionthrd">
         <div class="texto">
           <p class="footertext">Conditions of Use & Sale</p>
-           <p class="footertext"> Privacy Notice</p>
-            <p class="footertext">Interest-Based Ads</p>
+          <p class="footertext"> Privacy Notice</p>
+          <p class="footertext">Interest-Based Ads</p>
         </div>
         <div class="texto">
           <p class="footertext">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
