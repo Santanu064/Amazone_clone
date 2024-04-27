@@ -171,6 +171,97 @@ margin: 4px;
     font-size: 1rem;
     font-weight: 700;
 }
+.offcanvas.offcanvas-start {
+    width: 365px;
+}
+.offcanvas-header .btn-close{
+    margin-left: 70px;
+    margin-top: -1px;
+    filter: invert(1);
+    opacity: inherit;
+}
+.right-header{
+    background-color: #232f3e;
+    height: 50px;
+}
+.offcanvas-body{
+    padding: 0px;
+}
+.r-text-header b{
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+}
+.right-header{
+    display: flex;
+    align-items: center;
+}
+.offcanvas-header{
+    background-color:#232f3e;
+    height: 50px;
+    padding:0px;
+}
+h5#offcanvasExampleLabel.offcanvas-title{
+width: 240px;
+color: #fff;
+font-size: 19px;
+font-weight: 700;
+}
+.bi_right{
+    filter: invert(1);
+    margin: 0 10px 2px 36px;
+}
+.offcanvas-body{
+position: relative;
+overflow-x: hidden;
+
+}
+.Rlist_items{
+    padding-top: 7px;
+    padding-bottom: 30px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    will-change: transform;
+    padding-left: 0;
+}
+.rli_title{
+    padding-left: 36px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #111;
+    display: inline-block;
+    padding-top: 13px;
+    letter-spacing: 0.15px;
+}
+.rli_items{
+    padding-right: 20px;
+    padding-left: 36px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.rli_items:hover{
+    background-color: #eaeded;
+    color: #111;
+    cursor: pointer;
+}
+.r-divider{
+    border-bottom: 1px solid #d5dbdb;
+    padding: 0;
+    margin: 5px 0;
+    list-style: none;
+}
+
 
 /* hero section*/
 .d-block{
