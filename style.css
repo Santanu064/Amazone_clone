@@ -214,8 +214,8 @@ font-weight: 700;
 .offcanvas-body{
 position: relative;
 overflow-x: hidden;
-
 }
+
 .Rlist_items{
     padding-top: 7px;
     padding-bottom: 30px;
@@ -363,6 +363,7 @@ height: fit-content;
 }
 .card-carouler{
     width: 1377px;
+    min-width: 1473px;
     height: 366.89px;
     background-color: #fff;
   }
