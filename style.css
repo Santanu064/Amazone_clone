@@ -361,9 +361,13 @@ height: fit-content;
     margin-top: 1.5px;
     color: #484040;
 }
+@media screen and (max-width: 1900px) {
+    .card-carouler{
+     max-width: 1471px;
+    }
+}
 .card-carouler{
-    width: 1377px;
-    min-width: 1473px;
+    max-width: 1377px;
     height: 366.89px;
     background-color: #fff;
   }
