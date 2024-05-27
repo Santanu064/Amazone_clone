@@ -361,15 +361,23 @@ height: fit-content;
     margin-top: 1.5px;
     color: #484040;
 }
-@media (max-width: 1239px) {
-    .bg .card-carouler{
-     max-width: 1219px;
+@media screen and (min-width:1024px) and (max-width:1310px) {
+    .sliderAll > .card-carouler{
+        max-width: 1474px !important ;
     }
+}
+.sliderAll{
+    width: 100%;
+    height: 366.89px;
+    display: flex;
+    justify-content: center;
 }
 .card-carouler{
     max-width: 1377px;
     height: 366.89px;
     background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .slide_section{
   width: 100%;
