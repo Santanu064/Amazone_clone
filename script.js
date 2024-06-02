@@ -31,6 +31,7 @@ const logout = document.querySelector("#logout");
 const profile_img = document.querySelector(".drw-img")
 const b_log_svg = document.querySelector(".bi");
 let getobj = localStorage.getItem("user")
+console.log(getobj);
 if (getobj != null){
   let objw = JSON.parse(getobj);
   document.querySelector(".hello").innerHTML = `Deliver to ${objw.given_name}`;
