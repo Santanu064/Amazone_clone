@@ -2,7 +2,8 @@
 const loginss_btn = document.querySelector(".Account")
 loginss_btn?.addEventListener('click',() => {
   window.location.href = "Login_Page.html";
-    // window.open("Login_Page.html", "_blank");;
+  //open this page on a new tab to comment out the code below
+   // window.open("Login_Page.html", "_blank");
 });
 
 
@@ -19,26 +20,36 @@ Right_btn?.addEventListener('click' , (e)=>{
     slide.scrollLeft+=1200;
     e.preventDefault();
 })
-Left_btn?.addEventListener("click", (e) => {
+Left_btn.addEventListener("click", (e) => {
   const slide = document.querySelector(".card_silder");
   slide.scrollLeft -= 1100;
   e.preventDefault();
 });
 
-
-function handleCredentialResponse(response) {
-  function decodeJwtResponse(token) {
-    var base64Url = token.split(".")[1];
-    return JSON.parse(atob(base64Url));
+const login = document.querySelector("#login");
+const logout = document.querySelector("#logout");
+const profile_img = document.querySelector(".drw-img")
+const b_log_svg = document.querySelector(".bi");
+let getobj = localStorage.getItem("user")
+if (getobj != null){
+  let objw = JSON.parse(getobj);
+  document.querySelector(".hello").innerHTML = `Deliver to ${objw.given_name}`;
+  document.querySelector("#wel-log").innerHTML=`Hello, ${objw.given_name}`;
+  document.querySelector("#offcanvasExampleLabel").innerHTML = `Hello, ${objw.given_name}`;
+  if (objw.picture!= null || undefined) {
+     profile_img.classList.remove("d-none");
+     profile_img.src = `${objw.picture}`;
+  }else{
+    b_log_svg.classList.remove("d-none");
   }
-
-  const responsePayload = decodeJwtResponse(response.credential);
-  console.log(responsePayload);
-
-  // console.log("ID: " + responsePayload.sub);
-  // console.log("Full Name: " + responsePayload.name);
-  // console.log("Given Name: " + responsePayload.given_name);
-  // console.log("Family Name: " + responsePayload.family_name);
-  // console.log("Image URL: " + responsePayload.picture);
-  // console.log("Email: " + responsePayload.email);
+  logout.classList.remove("d-none")
+  //console.log(objw); 
 }
+else{
+    login.classList.remove("d-none");
+    b_log_svg.classList.remove("d-none");
+}
+logout.addEventListener("click", () => {
+  localStorage.clear();
+  window.location.reload();
+});

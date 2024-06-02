@@ -46,7 +46,7 @@
       </div>
 
       <div class="Account border"">
-        <p><span>Hello,sing in</span></p>
+        <p><span id="wel-log">Hello,sing in</span></p>
         <p class="nav-list">Account & Lists</p>
       </div>
       <div class="nav-order border">
@@ -82,10 +82,11 @@
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <div class="ac-logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" fill="currentColor" class="bi bi-person-circle bi_right" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" fill="currentColor" class="bi d-none bi-person-circle bi_right" viewBox="0 0 16 16">
               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
               <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
             </svg>
+            <img class="d-none drw-img"  width="30" height="28" src="#" alt="Profile img">
           </div>
           <div class="right_title"><h5 class="offcanvas-title" id="offcanvasExampleLabel">Hello,sing in</h5></div>
           
@@ -179,7 +180,9 @@
               <p class="rli_items">Customer Service</p>
             </li>
             <li>
-              <p class="rli_items" id="login">Sign in</p>
+              <p class="rli_items d-none" id="login">Sign in</p>
+              <p class="rli_items d-none" id="logout">Sign out</p>
+
             </li>
           </ul>
         </div>
@@ -684,7 +687,7 @@
       </div>
     </div>
   </div>
- 
+ <button class="out d-none">out</button>
   <footer>
     <div class="footer">
       <div class="toUp">

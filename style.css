@@ -361,6 +361,11 @@ height: fit-content;
     margin-top: 1.5px;
     color: #484040;
 }
+.drw-img{
+    border-radius: 50%;
+    margin:0 10px 2px 36px;
+  }
+
 .sliderAll{
     margin-top: -10px;
     width: 100%;
@@ -426,6 +431,8 @@ height: fit-content;
     margin-right: -55px;
     margin-top: 60px;
   }
+
+
   .bi.bi-chevron-left{
     width: 45px;
     height: 100px;
@@ -440,6 +447,7 @@ height: fit-content;
   box-shadow: 0 1px 3px #888;
   border-radius: 3px 0 0 3px;
   }
+
   .card{
     height: 283.89px;
     width: 240px;
