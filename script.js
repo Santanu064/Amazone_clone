@@ -30,26 +30,32 @@ const login = document.querySelector("#login");
 const logout = document.querySelector("#logout");
 const profile_img = document.querySelector(".drw-img")
 const b_log_svg = document.querySelector(".bi");
-let getobj = localStorage.getItem("user")
-console.log(getobj);
-if (getobj != null){
-  let objw = JSON.parse(getobj);
-  document.querySelector(".hello").innerHTML = `Deliver to ${objw.given_name}`;
-  document.querySelector("#wel-log").innerHTML=`Hello, ${objw.given_name}`;
-  document.querySelector("#offcanvasExampleLabel").innerHTML = `Hello, ${objw.given_name}`;
-  if (objw.picture!= null || undefined) {
-     profile_img.classList.remove("d-none");
-     profile_img.src = `${objw.picture}`;
-  }else{
-    b_log_svg.classList.remove("d-none");
-  }
-  logout.classList.remove("d-none")
-  //console.log(objw); 
-}
-else{
+function show_L_data() {
+  let getobj = localStorage.getItem("user");
+  if (getobj != null) {
+    let objw = JSON.parse(getobj);
+    document.querySelector(
+      ".hello"
+    ).innerHTML = `Deliver to ${objw.given_name}`;
+    document.querySelector("#wel-log").innerHTML = `Hello, ${objw.given_name}`;
+    document.querySelector(
+      "#offcanvasExampleLabel"
+    ).innerHTML = `Hello, ${objw.given_name}`;
+    if (objw.picture != null || undefined) {
+      profile_img.classList.remove("d-none");
+      profile_img.src = `${objw.picture}`;
+    } else {
+      b_log_svg.classList.remove("d-none");
+    }
+    logout.classList.remove("d-none");
+    //console.log(objw);
+  } else {
     login.classList.remove("d-none");
     b_log_svg.classList.remove("d-none");
+  }
 }
+
+window.addEventListener("load", show_L_data());
 logout.addEventListener("click", () => {
   localStorage.clear();
   window.location.reload();
