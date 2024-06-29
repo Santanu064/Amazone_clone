@@ -23,7 +23,7 @@
       <div class="address border">
         <p class="hello">Hello</p>
         <div class="icon">
-          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-solid fa-location-dot" style="margin-top: -3px;"></i>
           <p class="select">Select your address</p>
         </div>
       </div>
@@ -32,8 +32,8 @@
           <option>All</option>
           <option>All</option>
         </select>
-        <input type="text" placeholder="Search Amazon.in" class="input-box" />
-        <div class="search-icon">
+        <input type="text" placeholder="Search Amazon.in" class="input-box"/>
+        <div class="search-icon"  onclick={sreachFun()}>
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
@@ -44,11 +44,12 @@
           <option>EN</option>
         </select>
       </div>
-
+      
       <div class="Account border"">
         <p><span id="wel-log">Hello,sing in</span></p>
         <p class="nav-list">Account & Lists</p>
       </div>
+  
       <div class="nav-order border">
         <p><span>Returns</span></p>
         <p class="nav-list">& Orders</p>

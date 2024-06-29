@@ -6,7 +6,7 @@ function handleCredentialResponse(response) {
   const responsePayload = decodeJwtResponse(response.credential);
   let obj = JSON.stringify(responsePayload);
     localStorage.setItem('user',obj)
-    window.location.href="index.html"
+    window.location.href="../index.html"
 }
 
 
