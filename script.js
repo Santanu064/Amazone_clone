@@ -134,7 +134,7 @@ async function apiData (query) {
      document.querySelector(".searchcard").innerHTML = data.products
        .map((item) => {
         console.log(item);
-         let { title, price, thumbnail, description } = item;
+         let { title, price, thumbnail, description, rating,stock,shippingInformation } = item;
          return `
        <div class="rsbox">
         <div class="rsimg-box">
@@ -143,9 +143,15 @@ async function apiData (query) {
         <div class="bottom">
         <h3 class="apititle">${title}</h3>
         <p class="apidesc">${description}</p>
+        <p class="prating">${rating}<p>
+        <p class="pstock">Left ${stock}<p>
         <p class="apiPrice">${price}</p>
-        <button>Add to catr </button>
+        <p class="apishipinformatin">${shippingInformation}</p>
+
         </div>
+        <div class="apiBwraper">
+                <button class ="apiButton">Add to cart </button>
+                </div>
         </div>
         `;
        })
