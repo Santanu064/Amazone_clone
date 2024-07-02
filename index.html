@@ -33,7 +33,7 @@
           <option>All</option>
         </select>
         <input type="text" placeholder="Search Amazon.in" class="input-box"/>
-        <div class="search-icon"  onclick={sreachFun()}>
+        <div class="search-icon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
@@ -190,6 +190,9 @@
       </div>
     </div>
   </header>
+  <div class="searchcard  d-none">
+   <!-- display api data -->
+  </div>
   <div id="carouselExample" class="carousel slide">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -232,30 +235,30 @@
   </div>
   <div class="bg">
     <div class="shop">
-      <div class="box">
+      <div class="box"> 
         <div class="box-content">
           <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Revamp your home in style</h2>
           <div class="boxin-wrapper">
-            <div class="boxin-fm">
-              <div class="boxin-content">
+            <div class="boxin-fm ">
+              <div class="boxin-content" id="home-decoration">
                 <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_f.jpg');"></div>
                 <div class="boxin-text">Cushion covers, bedsheets & more</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="fragrances">
                 <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_s.jpg')"></div>
                 <div class="boxin-text">Figurines, vases and more</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="home-decoration">
                 <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_t.jpg');"></div>
                 <div class="boxin-text">Home storage</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="tablets">
                 <div class="boxin-f" style="background-image: url('./Images/Box_Images/box1_th.jpg') ;"></div>
                 <div class="boxin-text">Lighting solutaion</div>
               </div>
@@ -270,25 +273,25 @@
           </h2>
           <div class="boxin-wrapper">
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-f.jpg')"></div>
                 <div class="boxin-text">Air conditioners</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-s.jpg')"></div>
                 <div class="boxin-text">Refrigerators</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-t.jpg')"></div>
                 <div class="boxin-text">Microwaves</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box2-th.jpg')"></div>
                 <div class="boxin-text">Washing machines</div>
               </div>
@@ -303,25 +306,25 @@
             headphones</h2>
           <div class="boxin-wrapper">
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-f.jpg')"></div>
                 <div class="boxin-text">Starting ₹249 | boAt</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-s.jpg')"></div>
                 <div class="boxin-text">Starting ₹349 | boult</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-t.jpg')"></div>
                 <div class="boxin-text">Starting ₹649 | Noise</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box3-th.jpg')"></div>
                 <div class="boxin-text">Starting ₹149 | Zebronics</div>
               </div>
@@ -335,25 +338,25 @@
           <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Up to 60% off | Styles for men</h2>
           <div class="boxin-wrapper">
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="mens-shirts">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-f.jpg')"></div>
                 <div class="boxin-text">Clothing</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="mens-shoes">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-s.jpg')"></div>
                 <div class="boxin-text">Footwear</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="mens-watches">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-t.jpg')"></div>
                 <div class="boxin-text">Watches</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="womens-bags">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box4-th.jpg')"></div>
                 <div class="boxin-text">Bags & Wallets</div>
               </div>
@@ -367,25 +370,25 @@
           <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Starting ₹99 | Amazon Brands & more</h2>
           <div class="boxin-wrapper">
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="kitchen-accessories">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_f.jpg')"></div>
                 <div class="boxin-text">Starting ₹189 | Waterbottles</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="furniture">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_s.jpg')"></div>
                 <div class="boxin-text">Up to 60% off | Storage & racks</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="tops">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5_t.jpg')"></div>
                 <div class="boxin-text">Starting ₹99 | Toys & games</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="sunglasses">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box5-th.jpg')"></div>
                 <div class="boxin-text">Up to 60% off | Jackets, dresses & more</div>
               </div>
@@ -400,25 +403,25 @@
             needs</h2>
           <div class="boxin-wrapper">
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_f.jpg')"></div>
                 <div class="boxin-text">Spin mops, wipes & more</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_s.jpg')"></div>
                 <div class="boxin-text">Bathroom hardware & accessories</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_t.jpg')"></div>
                 <div class="boxin-text">Hammers, screwdrivers & more</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="#">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box6_th.jpg')"></div>
                 <div class="boxin-text">Extension boards, plugs & more</div>
               </div>
@@ -432,25 +435,25 @@
           <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Up to 60% off | Styles for women</h2>
           <div class="boxin-wrapper">
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="womens-dresses">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_f.jpg')"></div>
                 <div class="boxin-text">Women's Clothing</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="women-shoes">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_s.jpg')"></div>
                 <div class="boxin-text">Footwear+Handbags</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="womens-watches">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_t.jpg')"></div>
                 <div class="boxin-text">Watches</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="womens-jewellery">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box7_th.jpg')"></div>
                 <div class="boxin-text">Fashion jewellery</div>
               </div>
@@ -464,25 +467,25 @@
           <h2 style="font-size: 21px; font-weight: 700; padding-left: 5px;">Automotive essentials | Up to 60% off</h2>
           <div class="boxin-wrapper">
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="sports-accessories">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_f.jpg')"></div>
                 <div class="boxin-text">Cleaning accessories</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="motorcycle">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_s.jpg')"></div>
                 <div class="boxin-text">Tyre & rim care</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="sports-accessories">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_t.jpg')"></div>
                 <div class="boxin-text">Helmets</div>
               </div>
             </div>
             <div class="boxin">
-              <div class="boxin-content">
+              <div class="boxin-content" id="vehicle">
                 <div class="boxin-img" style="background-image: url('./Images/Box_Images/box8_th.jpg')"></div>
                 <div class="boxin-text">Vacuum cleaner</div>
               </div>
@@ -505,7 +508,7 @@
               </svg>
             </div>
   
-            <div class="card">
+            <div class="card" id="smartphones">
               <div class="carou_pic">
                   <img src="./Images/card-carouler/4105IiC5tDL._AC_SY200_.jpg" alt="" class="c_imag">
               </div>
@@ -515,7 +518,7 @@
                 </div>
                 <div class="pro_name">Best deal on Mobiles</div>
             </div>
-            <div class="card">
+            <div class="card" id="mobile-accessories">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41bLD50sZSL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -525,7 +528,7 @@
               </div>
               <div class="pro_name">Best offers on Accessories</div>
             </div>
-            <div class="card">
+            <div class="card" id="#">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/21Y8QZTRJBL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -535,7 +538,7 @@
               </div>
               <div class="pro_name">Best Offers on Home Cleaner</div>
             </div>
-            <div class="card">
+            <div class="card" id="#">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/31agL1j3cHL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -545,7 +548,7 @@
               </div>
               <div class="pro_name">Safety and Security</div>
             </div>
-            <div class="card">
+            <div class="card" id="#">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/31e1ZcqiwTL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -557,7 +560,7 @@
                 Best Offers on Refrigerators
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="#">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41TssgTTkwL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -567,7 +570,7 @@
               </div>
               <div class="pro_name">Best Offers from Top Brands</div>
             </div>
-            <div class="card">
+            <div class="card" id="#">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41yhwaUVEGL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -577,7 +580,7 @@
               </div>
               <div class="pro_name">Best Offers on Home and Storage Pro…</div>
             </div>
-            <div class="card">
+            <div class="card" id="#">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41uGjvXbeBL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -587,7 +590,7 @@
               </div>
               <div class="pro_name">Travel Adapters And Electronic Access…</div>
             </div>
-            <div class="card">
+            <div class="card" id="sports-accessories">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/31-TqE7SqjL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -597,7 +600,7 @@
               </div>
               <div class="pro_name">Best Offers on Destinio Travel Accesso…</div>
             </div>
-            <div class="card">
+            <div class="card" id="womens-dresses">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/618I++aMUNL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -607,7 +610,7 @@
               </div>
               <div class="pro_name">Branded Casual Wears</div>
             </div>
-            <div class="card">
+            <div class="card" id="mens-shoes">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/71JE6RVeu3L._SY695__AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -617,7 +620,7 @@
               </div>
               <div class="pro_name">Best Deals on Puma</div>
             </div>
-            <div class="card">
+            <div class="card" id="#">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/31gAA759UCL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -627,7 +630,7 @@
               </div>
               <div class="pro_name">Hard Water Filters and Bath accessorie…</div>
             </div>
-            <div class="card">
+            <div class="card" id="womens-bags">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41MAOdvdWTL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -637,7 +640,7 @@
               </div>
               <div class="pro_name">Best Offers on Storite Duffel Bags</div>
             </div>
-            <div class="card">
+            <div class="card" id="women-shoes">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41h5U0ROy6L._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -647,7 +650,7 @@
               </div>
               <div class="pro_name">Best Deals on Asian</div>
             </div>
-            <div class="card">
+            <div class="card" id="womens-dresses">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41Q8ngaU8aL._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -657,7 +660,7 @@
               </div>
               <div class="pro_name">T-Shirts, Dresses, Shorts, Vests</div>
             </div>
-            <div class="card">
+            <div class="card" id="mens-shirts">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/31H7R65unvS._AC_SY200_.jpg" alt="" class="c_imag">
             </div>
@@ -667,7 +670,7 @@
               </div>
               <div class="pro_name">Men's Clothing Bestsellers from Amaz…</div>
             </div>
-            <div class="card" style="margin-right: -55px;">
+            <div class="card" id="mens-shoes" style="margin-right: -55px;">
               <div class="carou_pic">
                 <img src="./Images/card-carouler/41h5U0ROy6L._AC_SY200_.jpg" alt="" class="c_imag">
             </div>

@@ -68,8 +68,89 @@ logout.addEventListener("click", () => {
 });
 
 
-function sreachFun() {
-let Input = document.querySelector(".input-box");
-Inputvalue = Input.value
- window.location = "http://localhost:5500/Amazone_clone/search/" + (Inputvalue) +".html";
+// const inputBox = document.querySelector(".input-box");
+// const searchBtn = document.querySelector(".search-icon");
+
+// inputBox.addEventListener("keydown", function (event) {
+//   if (event.key === "Enter") {
+//     search(inputBox.value);
+//   }
+// });
+
+// searchBtn?.addEventListener("click", function () {
+//   search(inputBox.value);
+// });
+
+// function search(query) {
+//   const url = `https://dummyjson.com/products/search?q=${query}`;
+
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// }
+
+
+
+for (var i = 0; i < document.querySelectorAll(".boxin-content").length; i++)
+ {
+  document.querySelectorAll(".boxin-content")[i]?.addEventListener("click",(e) => {
+      let querys = e.currentTarget.id;
+         if (querys != "#"|| null || undefined) {
+           apiData(querys);
+         }
+    });
+  }
+for (var i = 0; i < document.querySelectorAll(".card").length; i++) {
+  document.querySelectorAll(".card")[i]?.addEventListener("click", (e) => {
+      let querys = e.currentTarget.id;
+      if (querys!= "#") {
+        apiData(querys)
+      }
+    });
 }
+
+async function apiData (query) {
+   const urls = `https://dummyjson.com/products/category/${query}`;
+
+    await fetch(urls)
+     .then((response) => response.json())
+     .then((data) => {
+       dispalydata(data);
+     });
+
+
+   function dispalydata(data) {
+      if(data){
+       document.querySelector(".searchcard").classList.remove("d-none");
+       document.querySelector("#carouselExample").classList.add("d-none");
+       document.querySelector(".bg").classList.add("d-none");
+      }
+
+     document.querySelector(".searchcard").innerHTML = data.products
+       .map((item) => {
+        console.log(item);
+         let { title, price, thumbnail, description } = item;
+         return `
+       <div class="rsbox">
+        <div class="rsimg-box">
+        <img class="thumbnail" src=${thumbnail} alt=${title}>
+        </div>
+        <div class="bottom">
+        <h3 class="apititle">${title}</h3>
+        <p class="apidesc">${description}</p>
+        <p class="apiPrice">${price}</p>
+        <button>Add to catr </button>
+        </div>
+        </div>
+        `;
+       })
+       .join(" ");
+   }
+
+}
+
