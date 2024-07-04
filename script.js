@@ -1,4 +1,8 @@
 // Page functionallity
+document.querySelector(".logo").addEventListener("click" , () => {
+  window.location.href="./index.html"
+})
+
 
 const loginss_btn = document.querySelector(".Account");
 loginss_btn?.addEventListener("click", () => {
@@ -67,34 +71,35 @@ logout.addEventListener("click", () => {
   window.location.reload();
 });
 
+// Home page search button
 
-// const inputBox = document.querySelector(".input-box");
-// const searchBtn = document.querySelector(".search-icon");
+ const inputBox = document.querySelector(".input-box");
+const searchBtn = document.querySelector(".search-icon");
 
-// inputBox.addEventListener("keydown", function (event) {
-//   if (event.key === "Enter") {
-//     search(inputBox.value);
-//   }
-// });
+inputBox.addEventListener("keydown", function (event) {
+   if (event.key === "Enter") {
+     search(inputBox.value);
+   }
+ });
 
-// searchBtn?.addEventListener("click", function () {
-//   search(inputBox.value);
-// });
+searchBtn?.addEventListener("click", function () {
+   search(inputBox.value);
+   });
 
-// function search(query) {
-//   const url = `https://dummyjson.com/products/search?q=${query}`;
+function search(query) {
+   const url = `https://dummyjson.com/products/search?q=${query}`;
 
-//   fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data);
-//     })
-//     .catch((error) => {
-//       console.error(error);
-//     });
-// }
+   fetch(url)
+    .then((response) => response.json())
+         .then((data) => {
+         dispalydata(data)
+     })
+     .catch((error) => {
+       console.error(error);
+     });
+ }
 
-
+// search produch by category
 
 for (var i = 0; i < document.querySelectorAll(".boxin-content").length; i++)
  {
@@ -122,20 +127,38 @@ async function apiData (query) {
      .then((data) => {
        dispalydata(data);
      });
+}
 
+let apiFetchProducts = [];
 
-   function dispalydata(data) {
-      if(data){
-       document.querySelector(".searchcard").classList.remove("d-none");
-       document.querySelector("#carouselExample").classList.add("d-none");
-       document.querySelector(".bg").classList.add("d-none");
-      }
+function dispalydata(data) {
+   apiFetchProducts = data;
+  if (data.products.length!= 0) {
+    document.querySelector(".searchcard").classList.remove("d-none");
+    document.querySelector("#carouselExample").classList.add("d-none");
+    document.querySelector(".bg").classList.add("d-none");
+  }
+  else{
+        document.querySelector(".searchcard").classList.add("d-none");
+        document.querySelector("#carouselExample").classList.remove("d-none");
+        document.querySelector(".bg").classList.remove("d-none");
+  }
 
-     document.querySelector(".searchcard").innerHTML = data.products
-       .map((item) => {
-        console.log(item);
-         let { title, price, thumbnail, description, rating,stock,shippingInformation } = item;
-         return `
+  document.querySelector(".searchcard").innerHTML = data.products
+    .map((item,key ) => {
+      let {
+        title,
+        price,
+        thumbnail,
+        description,
+        rating,
+        stock,
+        shippingInformation,
+        discountPercentage,
+        availabilityStatus,
+        returnPolicy,
+      } = item;
+      return (`
        <div class="rsbox">
         <div class="rsimg-box">
         <img class="thumbnail" src=${thumbnail} alt=${title}>
@@ -144,19 +167,26 @@ async function apiData (query) {
         <h3 class="apititle">${title}</h3>
         <p class="apidesc">${description}</p>
         <p class="prating">${rating}<p>
-        <p class="pstock">Left ${stock}<p>
-        <p class="apiPrice">${price}</p>
+        <p class="pstock">${stock} products are left<p>
+        <p class="apiPrice"><span class="discpersent">-${discountPercentage}%</span>${price}</p>
+        <p class="apiabality">${availabilityStatus}</p>
         <p class="apishipinformatin">${shippingInformation}</p>
-
+        <p class="apireturnpol">${returnPolicy}</p>
         </div>
         <div class="apiBwraper">
-                <button class ="apiButton">Add to cart </button>
+                <button class ="apiButton" onclick ="addToCart(${key})"> Add to cart </button>
                 </div>
         </div>
-        `;
-       })
-       .join(" ");
-   }
+        `);
+        
+    })
+    .join(" ");
+}
 
+
+function addToCart(key) {
+ const pr = apiFetchProducts.products[key]
+ let ob = JSON.stringify(pr);
+ localStorage.setItem("product" , ob)
 }
 

@@ -674,13 +674,16 @@ margin: 21px 6px -18px 7px;
 }
 
 .searchcard{
+    place-items: center;
+    padding: 15px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 .rsbox{
-    border: 1px solid blue;
+    border:1px solid #d5d9d9;
+    border-radius: 15px;
    max-height: 632px;
     width: 324px;
     margin: 1px;
@@ -688,7 +691,7 @@ margin: 21px 6px -18px 7px;
     flex-direction: column;
     align-items: center;
     /* justify-content: space-between; */
-    padding: 15px;
+    
 }
 .rsimg-box{
     width: 100%;
@@ -707,12 +710,13 @@ margin: 21px 6px -18px 7px;
 }
 .bottom{
     width: 100%;
-    margin-top: 20px;
+    
     text-align: center;
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
+    padding: 15px 15px 0px 15px;
 }
 .apititle{
     font-size: 16px;
@@ -735,7 +739,7 @@ margin: 21px 6px -18px 7px;
  
 
 .apiPrice{
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 28px;
     text-align: start;
     height: 35px;
@@ -749,7 +753,7 @@ margin: 21px 6px -18px 7px;
 .pstock{
     text-align: start;
     color: #565959;
-    font-size: 14px;
+    font-size: 13px;
     height: 17px; 
     width: 100%;
 }
@@ -784,4 +788,23 @@ margin: 21px 6px -18px 7px;
     margin: 1px 0px 12px;
     display: flex;
     align-items: center;
+}
+
+.discpersent{
+    font-size: 28px;
+    text-align: start;
+    margin-right: 4px;
+    color: #cc1c39;
+    font-weight: 200;
+}
+.apiabality{
+    color: #565959;;
+    font-size: 12px;
+    text-align: start;
+    margin-top: -10px;
+}
+.apireturnpol{
+text-align: start;
+font-size: 14px;
+color: #0f1111;
 }
