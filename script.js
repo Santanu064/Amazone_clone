@@ -1,4 +1,20 @@
 // Page functionallity
+
+	window.onscroll = function() {myFunction()}; 
+	
+	var navlist = document.querySelector("header"); 
+	var sticky = navlist.offsetTop; 
+	
+	/* Function to stick the nav bar */
+	function myFunction() { 
+		if (window.pageYOffset >= sticky) { 
+			navlist.classList.add("sticky") 
+		} 
+		else { 
+			navlist.classList.remove("sticky"); 
+		} 
+	} 
+
 document.querySelector(".logo").addEventListener("click" , () => {
   window.location.href="./index.html"
 })
@@ -183,10 +199,11 @@ function dispalydata(data) {
     .join(" ");
 }
 
+let basket = JSON.parse(localStorage.getItem("addToCart_data")) || []
 
 function addToCart(key) {
  const pr = apiFetchProducts.products[key]
- let ob = JSON.stringify(pr);
- localStorage.setItem("product" , ob)
+ basket.push(pr)
+localStorage.setItem("addToCart_data", JSON.stringify(basket));
+document.querySelector(".crt_num").innerHTML = basket.length; 
 }
-

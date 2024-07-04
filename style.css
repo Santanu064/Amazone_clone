@@ -15,6 +15,13 @@ p{
     justify-content: space-evenly;
     align-items: center;
 }
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+
 
 /** logo desine*/
 
@@ -138,6 +145,16 @@ span{
 }
 
 
+.crt_num{
+    position: absolute;
+    height: 17px;
+    top: 16px;
+    width: 21px;
+    text-align: center;
+    right: 68px;
+    background-color: red;
+    border-radius: 50%;
+}
 .nav-cart{
     color: #fff;
    font-size: 0.85rem;
@@ -157,6 +174,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 .p-options p{
 display: inline;
