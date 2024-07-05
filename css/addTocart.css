@@ -1,0 +1,636 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+
+}
+p{
+    margin-bottom: 0px;
+    line-height: 15px;
+}
+.navbar{
+    height: 60px;
+    background-color: #0F1111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/** logo desine*/
+
+.nav-logo{
+    height: 46px;
+    width: 100px;
+}
+.logo{
+    background-image: url("../Images/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.border{
+    border: 1px solid transparent !important;
+    
+}
+.border:hover{
+    border: 1px solid white !important;
+}
+
+/* select address */
+
+.address{
+    color: #fff;
+}
+.icon{
+    display: flex;
+
+}
+.hello{
+    margin-left:15px ;
+    font-size: .80rem;
+    color: #cccccc;
+}
+.select{
+    margin-left: 3px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* serach bar */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+.search-icon{
+    cursor: pointer;
+    color: white;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.option{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: #f3f3f3;
+}
+.input-box{
+    width: 100%;
+    font-size: 0.90rem;
+    border: none;
+    outline: none;
+    padding-left:5px;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+/*country chouse*/
+
+.country{
+    display: flex;
+    
+}
+.india-logo{
+    background-image: url("../Images/1080px-Flag_of_India.png");
+    background-size: cover;
+    width: 23px;
+    height: 16px;
+}
+.language{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/*Account section*/
+
+.Account{
+color: #fff;
+}
+span{
+    color: #cccccc;
+    font-size: 0.75rem;
+}
+.nav-list{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* orders & returns*/
+
+.nav-order{
+    color:#fff;
+}
+
+
+.nav-cart{
+    color: #fff;
+   font-size: 0.85rem;
+   font-weight: 700;
+
+}
+.nav-cart i{
+    font-size: 32px;
+}
+
+/*panel work*/
+
+.panel{
+    height: 40px;
+    background: #222f3d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.p-options p{
+display: inline;
+font-size: 0.85rem;
+margin: 4px;
+}
+.p-last{
+    font-size: 0.9rem;
+    font-weight: 450;
+}
+.p-options{
+    width: 60%;
+}
+.bar{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.offcanvas.offcanvas-start {
+    width: 365px;
+}
+.offcanvas-header .btn-close{
+    margin-left: 70px;
+    margin-top: -1px;
+    filter: invert(1);
+    opacity: inherit;
+}
+.right-header{
+    background-color: #232f3e;
+    height: 50px;
+}
+.offcanvas-body{
+    padding: 0px;
+}
+.r-text-header b{
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+}
+.right-header{
+    display: flex;
+    align-items: center;
+}
+.offcanvas-header{
+    background-color:#232f3e;
+    height: 50px;
+    padding:0px;
+}
+h5#offcanvasExampleLabel.offcanvas-title{
+width: 240px;
+color: #fff;
+font-size: 19px;
+font-weight: 700;
+}
+.bi_right{
+    filter: invert(1);
+    margin: 0 10px 2px 36px;
+}
+.offcanvas-body{
+position: relative;
+overflow-x: hidden;
+}
+
+.Rlist_items{
+    padding-top: 7px;
+    padding-bottom: 30px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    will-change: transform;
+    padding-left: 0;
+}
+.rli_title{
+    padding-left: 36px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #111;
+    display: inline-block;
+    padding-top: 13px;
+    letter-spacing: 0.15px;
+}
+.rli_items{
+    padding-right: 20px;
+    padding-left: 36px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.rli_items:hover{
+    background-color: #eaeded;
+    color: #111;
+    cursor: pointer;
+}
+.r-divider{
+    border-bottom: 1px solid #d5dbdb;
+    padding: 0;
+    margin: 5px 0;
+    list-style: none;
+}
+
+/* footer */
+
+
+.footer{
+    height: 733px;
+    background-color: #232F3E;
+}
+.toUp{
+    height: 50px;
+    background-color: #37475a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+}
+.toUp p{
+    color: #fff;
+    font-size: 13px;
+}
+.footerlist{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 87px;
+    margin-right: 87px;
+}
+.alllist{
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 100%;
+}
+.list{
+    list-style: none;
+    padding-left: 0px;
+
+}
+.list li a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+    font-family: inherit;
+    
+}
+.header{
+    color: #fff;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    
+
+}
+.listBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list li{
+    margin-top: 5px;
+}
+.horizontalLine{
+    border-top: 1px solid #3a4553;
+    margin-top: 30px;
+}
+.sectiona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    height: 68px;
+    width: 100%;
+  
+}
+.footerlogo{
+    background-image: url("../Images/amazon_logo.png");
+    background-size: cover;
+    height: 47px;
+    width: 90px;
+}
+.lagnselect{
+    height: 34px;
+    width: 116px;
+    background-color: transparent;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 6px 18px 6px 8px;
+
+    color: #ccc;
+}
+.sectionb{
+    margin-top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    width: 100%;
+    
+}
+.fotlist{
+    list-style:none ;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    color: #ccc ;
+    font-size: 13px;
+    
+
+
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0px;
+    width: 987px;
+  }
+
+  .country {
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+
+  .lastsection{
+    margin-top: 10px;
+background-color: #131A22;
+height: 157px;
+width: 100%;
+  }
+  .table>:not(caption)>*>*{
+    background-color: #131A22;
+    border-bottom-width:0px;
+  }
+
+  .tabledata{
+    color:#999;
+    font-size: 12px!important;
+    padding: 8px 70px;
+  }
+  .span{
+    color:#ddd;
+  }
+  .table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .ftable{
+    margin: 17px;
+ }
+.sectionthrd{
+    height: 76px;
+    background-color:#131A22;
+    display: flex;
+    flex-direction: column;
+}
+.texto{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 21px 6px -18px 7px;
+}
+.footertext{
+    color:#ccc;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.add-container{
+    display: flex;
+    min-height: 65vh;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #EAEDED;
+    padding: 26px 0px;
+    
+}
+.add-container-left{
+    border: solid  #ffffff 10px;
+    width: 76%;
+    min-height: 410px;
+    height: fit-content;
+    background-color: #ffffff;
+}
+
+.Cart-h1{
+    font-weight: 400; 
+    font-size: 28px;
+    line-height: 36px;
+}
+.cart-p1{
+    color: #007185;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial, sans-serif;
+}
+.cart-p2{
+    font-size: 14px;
+    text-align: right;
+    color: #565959;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+.hr-tag{
+    height: 0.2px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(211, 209, 209);
+}
+.add-continents{
+    width: 100%;
+    padding: 15px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-pic{
+    height: 180px;
+    width: 204.5px;
+    margin: 0px 12px 4px 0px;
+
+}
+.cart-title{
+    width: 950px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cart-titleName{
+ height: 47px;
+ width: 698px;
+ font-size: 18px;
+ line-height: 1.3rem;
+}
+.cart-inStock{
+    height: 15px;
+    width: 42px;
+    font-size: 12px;
+    color: #007600;
+    line-height: 16px;
+}
+.cart-Shipping{
+    width: 143px;
+    height: 15px;
+    font-size: 12px;
+    color: #565959 !important;
+    line-height: 20px;
+
+}
+.cart-XL{
+    font-size: 12px;
+    line-height: 25px;
+    width: 43px;
+    height: 30px;
+}
+.cart-span1{
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 700;
+    color: black;
+}
+.btn{
+    width: 76px;
+    height: 29px;
+    padding: 0px 26px 0px 11px;
+    font-size: 14px;
+    background: #f0f2f2;
+    border-color: #d5d9d9;
+    border-radius: 8px;
+    color: #0F1111;
+}
+.del-icon{
+    width: 76px;
+    height: 29px;
+    font-size: 14px;
+    line-height: 35px;
+}
+.cart-innerTitle-left-pricetag{
+    line-height: 35px;
+}
+.cart-totalprize{
+    text-align: right;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+.main-price{
+ font-weight: 700;
+}
+.addToCart_pro{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    margin-bottom: 4px;
+}
+.TpHeadSec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.add-container-right{
+    padding: 17px;
+    width: 300px;
+    max-height: 311px;
+    background-color: #ffffff;
+}
+
+.right-bar{
+    width: 77%;
+}
+.free-txt{
+    font-size: 12px;
+    font-weight: 700;
+}
+.free-txt-cover{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+}
+.free-txt-icon{
+    display: flex;
+    align-items: center;
+}
+.PsubTotal-cover{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+}
+.subTotla-txt{
+    font-size: 21px;
+    
+}
+.subTotal-price{
+    font-size: 21px;
+}
+.redirct-btn-cover{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.redirct-checkout{
+    
+    background-color: rgb(255, 216, 20);
+    border:none;
+    border-radius: 15px;
+    height: 29px;
+    width: 100%;
+    padding: 1px 6px;
+    font-size: 14px;
+    color: #0f1111;
+
+}
+
+.redirct-checkout:hover{
+    background-color: rgb(245, 205, 3);
+}

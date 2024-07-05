@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon</title>
+  <link rel="shortcut icon" href="./Images/favicon_io (1)/android-chrome-192x192.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/addTocart.css" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="nav-logo border">
+        <div class="logo" ></div>
+      </div>
+      <div class="address border">
+        <p class="hello">Hello</p>
+        <div class="icon">
+          <i class="fa-solid fa-location-dot" style="margin-top: -3px;"></i>
+          <p class="select">Select your address</p>
+        </div>
+      </div>
+      <div class="nav-search">
+        <select class="option">
+          <option>All</option>
+          <option>All</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in" class="input-box"/>
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="country border">
+        <div class="india-logo"></div>
+        <select class="language">
+          <option>EN</option>
+        </select>
+      </div>
+      
+      <div class="Account border"">
+        <p><span id="wel-log">Hello,sing in</span></p>
+        <p class="nav-list">Account & Lists</p>
+      </div>
+  
+      <div class="nav-order border">
+        <p><span>Returns</span></p>
+        <p class="nav-list">& Orders</p>
+      </div>
+      <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+    </div>
+    <div class="panel">
+      <div class="bar border" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+        All
+      </div>
+      <div class="p-options">
+        <p class="border">Amazon miniTV</p>
+        <p class="border">Sell</p>
+        <p class="border">Best Sellers</p>
+        <p class="border">Today's Deals</p>
+        <p class="border">Mobiles</p>
+        <p class="border">New Releases</p>
+        <p class="border">Customer Service</p>
+        <p class="border">Prime</p>
+        <p class="border">Electronics</p>
+      </div>
+      <div class="p-last border">
+        <p>New Launches form Mobiles,Electronics & more | Shop now</p>
+      </div>
+    </div>
+    <div class="drawer">      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <div class="ac-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" fill="currentColor" class="bi d-none bi-person-circle bi_right" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+            <img class="d-none drw-img"  width="30" height="28" src="#" alt="Profile img">
+          </div>
+          <div class="right_title"><h5 class="offcanvas-title" id="offcanvasExampleLabel">Hello,sing in</h5></div>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="Rlist_items">
+            <li>
+              <div class="rli_title">Trending</div>
+            </li>
+            <li>
+              <p class="rli_items">Best sellers</p>
+            </li>
+            <li>
+              <p class="rli_items">New Releases</p>
+            </li>
+            <li>
+              <p class="rli_items">Movers and Shakers</p>
+            </li>
+            <li class="r-divider"></li>
+            <li>
+              <div class="rli_title">Digital Content and Devices</div>
+            </li>
+            <li>
+              <p class="rli_items">Amazon miniTV- FREE entertainment</p>
+            </li>
+            <li>
+              <p class="rli_items">Echo & Alexa</p>
+            </li>
+            <li>
+              <p class="rli_items">Fire TV</p>
+            </li>
+            <li>
+              <p class="rli_items">Kindle E-Readers & eBooks</p>
+            </li>
+            <li>
+              <p class="rli_items">Audible Audiobooks</p>
+            </li>
+            <li>
+              <p class="rli_items">Amazon Prime Video</p>
+            </li>
+            <li>
+              <p class="rli_items">Amazon Prime Music</p>
+            </li>
+            <li class="r-divider"></li>
+            <li>
+              <div class="rli_title">Shop by Category</div>
+            </li>
+            <li>
+              <p class="rli_items">Mobiles, Computers</p>
+            </li>
+            <li>
+              <p class="rli_items">TV, Appliances, Electronics</p>
+            </li>
+            <li>
+              <p class="rli_items">Men's Fashion</p>
+            </li>
+            <li>
+              <p class="rli_items">Women's Fashion</p>
+            </li>
+            <li>
+              <p class="rli_items">See all</p>
+            </li>
+            <li class="r-divider"></li>
+            <li>
+              <div class="rli_title">Programs & Features</div>
+            </li>
+            <li>
+              <p class="rli_items">Amazon Pay</p>
+            </li>
+            <li>
+              <p class="rli_items">Gift Cards & Mobile Recharges</p>
+            </li>
+            <li>
+              <p class="rli_items">Amazon Launchpad</p>
+            </li>
+            <li>
+              <p class="rli_items">Handloom and Handicrafts</p>
+            </li>
+            <li>
+              <p class="rli_items">See all</p>
+            </li>
+            <li class="r-divider"></li>
+            <li>
+              <div class="rli_title">Help & Settings</div>
+            </li>
+            <li>
+              <p class="rli_items">Your Account</p>
+            </li>
+            <li>
+              <p class="rli_items">Customer Service</p>
+            </li>
+            <li>
+              <p class="rli_items d-none" id="login">Sign in</p>
+              <p class="rli_items d-none" id="logout">Sign out</p>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header> 
+  <div class="add-container">
+    <div class="add-container-left">
+        <h1 class="Cart-h1">Shopping Cart</h1>
+        <p class="cart-p1">Deselect all items</p>
+        <p class="cart-p2">Price</p>
+        <div class="hr-tag"></div>
+         <div class="addToCart_pro">
+
+            <div class="add-continents">
+                <div class="content-pic">
+                    <img style="height: 180px; width:100% ;" src="../premium_photo-1680553492268-516537c44d91.avif" alt=""/>
+                </div>
+                <div class="cart-title">
+                    <div class="cart-innerTitle-left">
+                    <p class="cart-titleName">Alan Jones Clothing Women's Cotton Hooded Hooded Regular Fit Sweatshirt (WM17-SS01-STONE-XL_Stone_Brown_XL)</p>
+                    <p class="cart-inStock">in stock</p>
+                    <p class="cart-Shipping">Eligible for FREE Shipping</p>
+                    <p class="cart-XL"><span class="cart-span1">Size</span>:XL</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Qty :1
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item active" href="#">1</a></li>
+                          <li><a class="dropdown-item" href="#">2</a></li>
+                          <li><a class="dropdown-item" href="#">3</a></li>
+                          <li><a class="dropdown-item" href="#">4</a></li>
+                          <li><a class="dropdown-item" href="#">5</a></li>
+                        </ul>
+                      </div>
+                        <div class="del-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                              </svg>
+                        </div>
+                        </div>
+                        <div class="cart-innerTitle-right">
+                            <p class="cart-innerTitle-left-offtag">6%off Limited time deal</p>
+                            <p class="cart-innerTitle-left-pricetag"> <strong style="font-weight: 700;">1,59,999.00</strong></p>
+                        </div>
+                    </div>
+                 </div>
+                   
+            </div>      
+            <div class="hr-tag"></div>
+         <p class="cart-totalprize">Subtotal (1 item):  <strong style="font-weight: 700;">1,59,999.00</strong></p>
+    </div>
+    <div class="add-container-right">
+      <div class="TpHeadSec">
+        <div class="right-bar">
+            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 25%"></div>
+        </div>
+      </div>
+      <div class="freeDvPrice">
+        <p class="pric-text">100</p>
+     </div>
+      </div>
+      <div class="free-txt-cover">
+        <i class="fa-solid fa-circle-check free-txt-icon"></i>
+        <p class="free-txt">
+          Your order is eligible for FREE Delivery. Choose FREE Delivery option at checkout</p>
+      </div>
+      <div class="PsubTotal-cover">
+        <p class="subTotla-txt">Subtotal (2 items):</p>
+        <p class="subTotal-price">12873</p>
+      </div>
+      <div class="redirct-btn-cover">
+
+        <button class="redirct-checkout">Button</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="toUp">
+        <p>Back to top</p>
+      </div>
+      <div class="footerlist">
+        <div class="alllist">
+          <div class="listBox">
+
+            <ul class="list">
+              <p class="header">Get To Know Us</p>
+              <li>
+                <a href="#"">About Us</a>
+              </li>
+            <li>
+              <a href=" #">Career</a>
+              </li>
+              <li>
+                <a href="#">Press Related</a>
+              </li>
+              <li>
+                <a href="#">Amazone Science</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="listBox">
+
+            <ul class="list">
+              <p class="header">Contact Us</p>
+              <li>
+                <a href="#"">Facebook</a>
+                </li>
+                <li>
+                  <a href=" #">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="listBox">
+
+            <ul class="list">
+              <p class="header">Make Money With Us</p>
+              <li>
+                <a href="#">Sell on Amazon</a>
+              </li>
+              <li>
+                <a href="#">Sell under Amazon Accelerator</a>
+              </li>
+              <li>
+                <a href="#">Protect and Build Your Brand</a>
+              </li>
+              <li>
+                <a href="#">Amazon Global Selling</a>
+              </li>
+              <li>
+                <a href="#">Become an Affiliate</a>
+              </li>
+              <li>
+                <a href="#">Fulfilment by Amazon</a>
+              </li>
+              <li>
+                <a href="#">Advertise Your Products</a>
+              </li>
+              <li>
+                <a href="#">Amazon Pay on Merchants</a>
+              </li>
+            </ul>
+          </div>
+          <div class="listBox">
+
+            <ul class="list">
+              <p class="header">Let Us Help You</p>
+              <li>
+                <a href="#">COVID-19 and Amazon</a>
+              </li>
+              <li>
+                <a href="#">Your Account</a>
+              </li>
+              <li>
+                <a href="#">Returns Centre</a>
+              </li>
+              <li>
+                <a href="#">100% Purchase Protection</a>
+              </li>
+              <li>
+                <a href="#">Amazon App Download</a>
+              </li>
+              <li>
+                <a href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="horizontalLine"></div>
+      <div class="sectiona">
+        <div class="footerlogo">
+        </div>
+        <div class="footeroption">
+          <select class="lagnselect">
+            <option class="english">English</option>
+          </select>
+        </div>
+      </div>
+      <div class="sectionb">
+        <ul class="countries">
+          <li class="country">Australia</li>
+          <li class="country">Brazil</li>
+          <li class="country">Canada</li>
+          <li class="country">China</li>
+          <li class="country">France</li>
+          <li class="country">Germany</li>
+          <li class="country">Italy</li>
+          <li class="country">Japan</li>
+          <li class="country">Mexico</li>
+          <li class="country">Netherlands</li>
+          <li class="country">Poland</li>
+          <li class="country">Singapore</li>
+          <li class="country">Spain</li>
+          <li class="country">Turkey</li>
+          <li class="country">United Arab Emirates</li>
+          <li class="country">United Kingdom</li>
+          <li class="country">United States</li>
+        </ul>
+      </div>
+      <div class="lastsection">
+        <div class="table">
+          <table class="ftable">
+            <tr class="tablerow">
+              <td class="tabledata">
+                <span class="span">AbeBooks<br></span>
+                Books, art<br>
+                & collectibles
+              </td>
+              <td class="tabledata">
+                <span class="span">Amazon Web Services<br></span>
+                Scalable Cloud<br>
+                Computing Services
+              </td>
+              <td class="tabledata">
+                <span class="span">Audible<br></span>
+                Download<br>
+                Audio Books
+              </td>
+              <td class="tabledata">
+                <span class="span">IMDb<br></span>
+                Movies, TV<br>
+                & Celebrities
+              </td>
+            </tr>
+
+
+            <tr class="tablerow">
+              <td class="tabledata">
+                <span class="span">Shopbop<br></span>
+                Designer<br>
+                Fashion Brands
+              </td>
+              <td class="tabledata">
+                <span class="span">Amazon Business<br></span>
+                Everything For<br>
+                Your Business
+              </td>
+              <td class="tabledata">
+                <span class="span">Prime Now<br></span>
+                2-Hour Delivery<br>
+                on Everyday Items
+              </td>
+              <td class="tabledata">
+                <span class="span">Amazon Prime Music<br></span>
+                100 million songs, ad-free<br>
+                Over 15 million podcast episodes
+              </td>
+
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="sectionthrd">
+        <div class="texto">
+          <p class="footertext">Conditions of Use & Sale</p>
+          <p class="footertext"> Privacy Notice</p>
+          <p class="footertext">Interest-Based Ads</p>
+        </div>
+        <div class="texto">
+          <p class="footertext">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+  "></script>
+ 
+</body>
+
+</html>
