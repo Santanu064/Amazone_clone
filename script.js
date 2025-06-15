@@ -1,3 +1,4 @@
+
 // Page functionallity
 
 	window.onscroll = function() {myFunction()}; 
@@ -62,13 +63,12 @@ function show_Log_data() {
   let getobj = localStorage.getItem("user");
   if (getobj != null) {
     let objw = JSON.parse(getobj);
-    document.querySelector(
-      ".hello"
-    ).innerHTML = `Deliver to ${objw.given_name}`;
+    document.querySelector(".hello").innerHTML = `Deliver to ${objw.given_name}`;
+    console.log(objw);
     document.querySelector("#wel-log").innerHTML = `Hello, ${objw.given_name}`;
-    document.querySelector(
-      "#offcanvasExampleLabel"
-    ).innerHTML = `Hello, ${objw.given_name}`;
+    console.log();
+    
+    document.querySelector("#offcanvasExampleLabel").innerHTML = `Hello, ${objw.given_name}`;
 
     if (objw.picture != null || undefined) {
       profile_img.classList.remove("d-none");
@@ -77,7 +77,7 @@ function show_Log_data() {
       b_log_svg.classList.remove("d-none");
     }
     logout.classList.remove("d-none");
-    //console.log(objw);
+    console.log(objw);
   } else {
     login.classList.remove("d-none");
     b_log_svg.classList.remove("d-none");
@@ -149,7 +149,7 @@ async function apiData (query) {
      });
 }
 
-let apiFetchProducts = [];
+let apiFetchProducts = []; 
 
 function dispalydata(data) {
   

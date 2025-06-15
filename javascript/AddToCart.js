@@ -23,7 +23,7 @@ function generateCard() {
           thumbnail,
           discountPercentage,
           availabilityStatus,
-          minimumOrderQuantity,
+          stock,
           price,
         } = data;
        
@@ -38,18 +38,14 @@ function generateCard() {
                     <p class="cart-inStock">${availabilityStatus}</p>
                     <p class="cart-Shipping">Eligible for FREE Shipping</p>
                     <p class="cart-XL"><span class="cart-span1">Size</span>:XL</p>
-                    <div class="dropdown">
-                       <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Qut :
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" onclick="quantityChanged()">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
-                      </div>
+                    <div class="dropdown " style="width: 15%;">
+                       <select class="form-select" id="mySelect" aria-label="Multiple select example">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div> 
                         <div class="del-icon" onclick="RemovePro(${key})">
                            <i class="fa-solid fa-trash" ></i>
                         </div>
@@ -64,7 +60,10 @@ function generateCard() {
       })
       .join("");
   }
-   calculate();
+  totalPrice();
+  processBar();
+  calculate();
+   
 }
 generateCard();
 
@@ -78,11 +77,45 @@ function RemovePro(id) {
   }
 }
 
-function quantityChanged(e) {
-  let quentity = e.target;
-  console.log(quentity);
-  if (isNaN(quentity.value) || quentity.value <= 0) {
-    quentity.value = 1;
+function totalPrice() {
+  let total = 0;
+  basket.map((data) => {
+    let price = Number(data.price);
+    total += price;
+  });
+  document.querySelector(".cart-totalprize").innerHTML=`Subtotal (${basket.length} item):${total.toFixed(2)}`;
+  document.querySelector(".subTotla-txt").innerHTML=`Subtotal (${basket.length} item):${total.toFixed(2)}`;
+  return total.toFixed(2);
+}
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   const selectElement = document.querySelector('.form-select');
+//   // const displayElement = document.getElementById('selectedValueDisplay');
+
+//   selectElement.addEventListener('change', function() {
+//     const selectedValue = selectElement.value;
+//     console.log( selectedValue);
+//   });
+// });
+
+const selectElement = document.getElementById("mySelect");
+
+  selectElement.addEventListener("change", function () {
+    const selectedValue = this.value;
+    console.log("Selected value:", selectedValue);
+  });
+
+function processBar() {
+  let total = Math.floor(totalPrice());
+  console.log(total);
+  if (total > 100) {
+    document.querySelector(".progress-bar").style.width = `100%`;
   }
-  generateCard();
+  else if (total >0 && total < 100) {
+    document.querySelector(".progress-bar").style.width = `${total}%`; 
+  }
+  else {
+    document.querySelector(".progress-bar").style.width = `0%`;
+  }
 }

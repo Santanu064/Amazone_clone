@@ -183,6 +183,9 @@ margin: 4px;
     filter: invert(1);
     opacity: inherit;
 }
+.dropdown-item{
+    width: fit-content;
+}
 .right-header{
     background-color: #232f3e;
     height: 50px;
